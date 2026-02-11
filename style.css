@@ -1,0 +1,107 @@
+/* Global */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0F172A, #1E293B);
+  color: #F59E0B;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  padding: 20px;
+}
+.logo {
+  width: 90px;
+  margin-bottom: 10px;
+}
+
+/* Center */
+.centered {
+  max-width: 380px;
+  margin: auto;
+  padding-top: 30px;
+}
+
+/* Cards */
+.card {
+  background: #15243A;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0px 4px 15px rgba(245, 158, 11, 0.4);
+  margin-bottom: 15px;
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+/* Buttons */
+.btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  background: #F59E0B;
+  color: #0F172A;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.btn:hover {
+  background: #FFD700;
+}
+.gold-btn {
+  margin-top: 10px;
+  box-shadow: 0px 0px 8px #FFD700;
+}
+
+/* Product Card */
+.product-card {
+  background: #1E2A3B;
+  margin: 10px auto;
+  max-width: 380px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(245, 158, 11, 0.5);
+}
+.product-card h2 {
+  margin: 0;
+}
+.product-card p {
+  margin: 6px 0;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 23, 42, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-content {
+  background: #15243A;
+  padding: 20px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 320px;
+}
+
+/* Responsive */
+@media (min-width: 600px) {
+  .centered, .product-card {
+    margin: 20px auto;
+  }
+}

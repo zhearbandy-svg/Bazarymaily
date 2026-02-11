@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ku">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bazary Maily</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <img src="assets/logo.png" alt="BM Logo" class="logo">
+  <h1>Bazary Maily</h1>
+  <p>بازاڕی مەزاد — ٤٨ کاتژمێر</p>
+</header>
+
+<!-- Login -->
+<div id="login-section" class="card centered">
+  <input type="text" id="phone" placeholder="+964 7xxxxxxxx">
+  <button class="btn" onclick="sendOTP()">کۆد بنێرە</button>
+</div>
+
+<!-- OTP -->
+<div id="otp-section" class="card centered" style="display:none;">
+  <input type="text" id="otp" placeholder="کۆدی OTP">
+  <button class="btn" onclick="verifyOTP()">دڵنیا بکە</button>
+</div>
+
+<!-- Main -->
+<div id="home-section" style="display:none;">
+  <div id="products-container"></div>
+  <button class="btn gold-btn" onclick="showAddProduct()">زیادکردنی کاڵا</button>
+</div>
+
+<!-- Add Product -->
+<div id="add-product-modal" class="modal" style="display:none;">
+  <div class="modal-content">
+    <input type="text" id="product-title" placeholder="ناوی کاڵا">
+    <input type="number" id="product-price" placeholder="نرخی دەستپێک">
+    <button class="btn gold-btn" onclick="addProduct()">زیاد بکە</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
